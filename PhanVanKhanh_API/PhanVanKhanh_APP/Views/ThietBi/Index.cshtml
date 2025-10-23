@@ -1,0 +1,19 @@
+﻿@model IEnumerable<PhanVanKhanh_APP.Models.ThietBiViewModel>
+@{ ViewBag.Title = "Danh sách thiết bị"; }
+
+@section Styles {
+    <link href="@Url.Content("~/Content/css/thietbi-index.css")" rel="stylesheet" type="text/css" />
+}
+
+<h2 class="page-title">Danh sách thiết bị</h2>
+<div class="product-grid">
+    @foreach (var item in Model)
+    {
+        <div class="product-card">
+            <img src="@Url.Content("~/Content/images/" + (item.HinhAnh ?? "no-image.png"))" alt="@item.TenThietBi" />
+            <h4>@item.TenThietBi</h4>
+            <p>@string.Format("{0:N0}", item.DonGia) VNĐ</p>
+            @Html.ActionLink("Xem chi tiết", "Detail", "ThietBi", new { id = item.MaThietBi }, new { @class = "btn" })
+        </div>
+    }
+</div>

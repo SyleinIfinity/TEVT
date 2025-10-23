@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\thietbi\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\thietbi\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\thietbi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\thietbi\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\home\\_danhmucmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\home\\_danhmucmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\content\\css\\thietbi-detail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\content\\css\\thietbi-detail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\content\\css\\thietbi-index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\content\\css\\thietbi-index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\models\\thietbiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\models\\thietbiviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\models\\nhomviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\models\\nhomviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\models\\nhomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\models\\nhomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\models\\inhomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\models\\inhomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\controllers\\thietbicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\controllers\\nhomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\controllers\\nhomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Migrations\\20251023044453_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PhanVanKhanh_API\\Migrations\\20251023044453_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\models\\thietbirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\models\\thietbirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\models\\ithietbirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\models\\ithietbirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\models\\thietbi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\models\\thietbi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\models\\nhom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\models\\nhom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Migrations\\20251023043732_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PhanVanKhanh_API\\Migrations\\20251023043732_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\phanvankhanh_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\phanvankhanh_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_app\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9AE95E97-7B31-46C8-A99C-494EBEAEA04C}|PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj|solutionrelative:phanvankhanh_app\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\gk\\phanvankhanh_2114\\phanvankhanh_api\\phanvankhanh_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E0C2A414-699F-4EBA-BA96-1B2C9D9117F4}|PhanVanKhanh_API\\PhanVanKhanh_API.csproj|solutionrelative:phanvankhanh_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T05:14:23.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T04:23:29.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T04:22:54.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_DanhMucMenu.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\_DanhMucMenu.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\Home\\_DanhMucMenu.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\_DanhMucMenu.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\Home\\_DanhMucMenu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T04:23:15.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\ThietBi\\Index.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\ThietBi\\Index.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\ThietBi\\Index.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\ThietBi\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T04:22:31.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\ThietBi\\Detail.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\ThietBi\\Detail.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\ThietBi\\Detail.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\ThietBi\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T04:22:40.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThietBiController.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Controllers\\ThietBiController.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Controllers\\ThietBiController.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Controllers\\ThietBiController.cs",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Controllers\\ThietBiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:22:15.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "thietbi-index.css",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Content\\css\\thietbi-index.css",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Content\\css\\thietbi-index.css",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Content\\css\\thietbi-index.css",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Content\\css\\thietbi-index.css",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-23T04:19:45.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "style.css",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Content\\css\\style.css",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Content\\css\\style.css",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Content\\css\\style.css",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Content\\css\\style.css",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-23T04:19:27.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ThietBiViewModel.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Models\\ThietBiViewModel.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Models\\ThietBiViewModel.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Models\\ThietBiViewModel.cs",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Models\\ThietBiViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:20:49.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "thietbi-detail.css",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Content\\css\\thietbi-detail.css",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Content\\css\\thietbi-detail.css",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Content\\css\\thietbi-detail.css",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Content\\css\\thietbi-detail.css",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAiwI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-23T04:20:04.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T04:47:52.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:21:03.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NhomViewModel.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Models\\NhomViewModel.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Models\\NhomViewModel.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Models\\NhomViewModel.cs",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Models\\NhomViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:20:33.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NhomRepository.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\NhomRepository.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Models\\NhomRepository.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\NhomRepository.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Models\\NhomRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:43:44.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "INhomRepository.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\INhomRepository.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Models\\INhomRepository.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\INhomRepository.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Models\\INhomRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:43:27.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ThietBiController.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Controllers\\ThietBiController.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Controllers\\ThietBiController.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Controllers\\ThietBiController.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Controllers\\ThietBiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:45:40.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NhomController.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Controllers\\NhomController.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Controllers\\NhomController.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Controllers\\NhomController.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Controllers\\NhomController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:45:22.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20251023044453_InitialCreate.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Migrations\\20251023044453_InitialCreate.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Migrations\\20251023044453_InitialCreate.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Migrations\\20251023044453_InitialCreate.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Migrations\\20251023044453_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:44:53.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\WeatherForecast.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\WeatherForecast.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:44:26.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ThietBiRepository.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\ThietBiRepository.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Models\\ThietBiRepository.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\ThietBiRepository.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Models\\ThietBiRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:44:13.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IThietBiRepository.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\IThietBiRepository.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Models\\IThietBiRepository.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\IThietBiRepository.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Models\\IThietBiRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:44:00.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Program.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Program.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Program.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:07:38.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20251023043732_InitialCreate.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Migrations\\20251023043732_InitialCreate.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Migrations\\20251023043732_InitialCreate.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Migrations\\20251023043732_InitialCreate.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Migrations\\20251023043732_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:37:32.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Nhom.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\Nhom.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Models\\Nhom.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\Nhom.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Models\\Nhom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:06:58.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ThietBi.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\ThietBi.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Models\\ThietBi.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Models\\ThietBi.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Models\\ThietBi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:07:21.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PhanVanKhanh_API",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\PhanVanKhanh_API.csproj",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\PhanVanKhanh_API.csproj",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\PhanVanKhanh_API.csproj",
+              "RelativeToolTip": "PhanVanKhanh_API\\PhanVanKhanh_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T04:08:10.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Data\\DataContext.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Data\\DataContext.cs",
+              "RelativeToolTip": "PhanVanKhanh_API\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T04:06:30.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Views\\Home\\About.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-23T04:25:38.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PhanVanKhanh_API\\Properties\\launchSettings.json",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PhanVanKhanh_API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T04:21:12.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Web.config",
+              "RelativeDocumentMoniker": "PhanVanKhanh_APP\\Web.config",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\GK\\PhanVanKhanh_2114\\PhanVanKhanh_API\\PhanVanKhanh_APP\\Web.config",
+              "RelativeToolTip": "PhanVanKhanh_APP\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-23T04:21:07.911Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

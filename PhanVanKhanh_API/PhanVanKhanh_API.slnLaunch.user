@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "PhanVanKhanh_API\\PhanVanKhanh_API.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "PhanVanKhanh_APP\\PhanVanKhanh_APP.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

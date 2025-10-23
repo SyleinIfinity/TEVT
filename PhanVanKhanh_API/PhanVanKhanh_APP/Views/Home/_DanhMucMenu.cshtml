@@ -1,0 +1,12 @@
+﻿@model IEnumerable<PhanVanKhanh_APP.Models.NhomViewModel>
+
+<ul class="menu-list">
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="@Url.Action("Index", "ThietBi", new { maNhom = item.MaNhom })">
+                <span>@item.TenNhom</span>
+            </a>
+        </li>
+    }
+</ul>
