@@ -1,0 +1,15 @@
+﻿@model QLBH_WEB.Models.SanPhamViewModel
+@{ ViewBag.Title = "Chi tiết sản phẩm"; }
+<h2>Chi tiết sản phẩm</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Tên sản phẩm</dt>
+        <dd>@Html.DisplayFor(model => model.TENSANPHAM)</dd>
+        @* Hiển thị các trường còn lại tương tự *@
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MASANPHAM }) |
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</p>
