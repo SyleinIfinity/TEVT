@@ -46,9 +46,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.6.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,6 +143,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\QuanLySanPhamController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -129,11 +152,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\admin-custom-layout.css" />
+    <Content Include="Content\css\atlantis.css" />
+    <Content Include="Content\css\atlantis.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\Cart.css" />
     <Content Include="Content\css\Create.css" />
+    <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\details.css" />
     <Content Include="Content\css\dsSANPHAM.css" />
     <Content Include="Content\css\EditSanPham.css" />
+    <Content Include="Content\css\fonts.css" />
+    <Content Include="Content\css\fonts.min.css" />
     <Content Include="Content\css\iecss.css" />
     <Content Include="Content\css\qlSANPHAM.css" />
     <Content Include="Content\css\Site.css" />
@@ -212,7 +242,55 @@
     <Content Include="Content\images\tom3.jpg" />
     <Content Include="Content\images\top_search_bg.gif" />
     <Content Include="Content\images\user_add.png" />
+    <Content Include="Content\js\atlantis.js" />
+    <Content Include="Content\js\atlantis.min.js" />
+    <Content Include="Content\js\atlantis2.js" />
     <Content Include="Content\js\boxOver.js" />
+    <Content Include="Content\js\core\bootstrap.min.js" />
+    <Content Include="Content\js\core\jquery.3.2.1.min.js" />
+    <Content Include="Content\js\core\popper.min.js" />
+    <Content Include="Content\js\demo.js" />
+    <Content Include="Content\js\plugin\bootstrap-notify\bootstrap-notify.min.js" />
+    <Content Include="Content\js\plugin\chart-circle\circles.min.js" />
+    <Content Include="Content\js\plugin\chart.js\chart.min.js" />
+    <Content Include="Content\js\plugin\datatables\datatables.min.js" />
+    <Content Include="Content\js\plugin\jquery-scrollbar\jquery.scrollbar.min.js" />
+    <Content Include="Content\js\plugin\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="Content\js\plugin\jquery-ui-touch-punch\jquery.ui.touch-punch.min.js" />
+    <Content Include="Content\js\plugin\jquery.sparkline\jquery.sparkline.min.js" />
+    <Content Include="Content\js\plugin\jqvmap\jquery.vmap.min.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\continents\jquery.vmap.africa.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\continents\jquery.vmap.asia.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\continents\jquery.vmap.australia.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\continents\jquery.vmap.europe.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\continents\jquery.vmap.north-america.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\continents\jquery.vmap.south-america.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.algeria.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.argentina.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.brazil.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.canada.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.croatia.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.europe.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.france.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.germany.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.greece.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.indonesia.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.iran.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.iraq.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.new_regions_france.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.russia.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.serbia.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.tunisia.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.turkey.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.ukraine.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.usa.counties.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.usa.districts.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.usa.js" />
+    <Content Include="Content\js\plugin\jqvmap\maps\jquery.vmap.world.js" />
+    <Content Include="Content\js\plugin\sweetalert\sweetalert.min.js" />
+    <Content Include="Content\js\plugin\webfont\webfont.min.js" />
+    <Content Include="Content\js\setting-demo.js" />
+    <Content Include="Content\js\setting-demo2.js" />
     <Content Include="Content\js\windowopen.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -222,6 +300,7 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\css\atlantis.css.map" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -245,8 +324,13 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\QuanLySanPham\_SanPhamForm.cshtml" />
+    <Content Include="Views\QuanLySanPham\Create.cshtml" />
+    <Content Include="Views\QuanLySanPham\Details.cshtml" />
+    <Content Include="Views\QuanLySanPham\Edit.cshtml" />
+    <Content Include="Views\QuanLySanPham\Index.cshtml" />
+    <Content Include="Views\Home\_DanhMucMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

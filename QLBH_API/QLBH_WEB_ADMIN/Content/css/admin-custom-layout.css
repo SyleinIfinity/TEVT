@@ -1,0 +1,195 @@
+﻿/* CSS TÙY CHỈNH TÁI TẠO LAYOUT ADMIN
+    Lưu ý: Đây là CSS rất cơ bản, không responsive.
+*/
+
+/* 1. Reset Cơ bản */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f5f8; /* Màu nền xám nhạt */
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. Cấu trúc Wrapper */
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* 3. Header (Phía trên) */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Chiều cao cố định cho header */
+    z-index: 100;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo-header {
+    width: 250px; /* Bằng với chiều rộng sidebar */
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background-color: #1d6edc; /* Màu xanh đậm cho logo */
+    color: white;
+}
+
+    .logo-header .logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+
+        .logo-header .logo img {
+            height: 30px; /* Chiều cao logo */
+            margin-right: 10px;
+        }
+
+/* Ẩn các nút toggle (vì không dùng JS) */
+.navbar-toggler, .topbar-toggler, .nav-toggle {
+    display: none;
+}
+
+.navbar-header {
+    flex: 1; /* Chiếm phần còn lại của header */
+    background-color: #1a73e8; /* Màu xanh cho navbar */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Đẩy nội dung sang phải */
+    padding: 0 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+/* 4. Sidebar (Bên trái) */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Nằm dưới header */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 60px); /* Chiều cao 100% trừ đi header */
+    background-color: #ffffff;
+    border-right: 1px solid #e9e9e9;
+    z-index: 99;
+}
+
+.sidebar-content {
+    padding: 15px;
+}
+
+.nav-primary .nav-item {
+    margin-bottom: 5px;
+}
+
+    .nav-primary .nav-item a {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        border-radius: 5px;
+        color: #555;
+        font-weight: 500;
+    }
+
+        .nav-primary .nav-item a:hover,
+        .nav-primary .nav-item.active a {
+            background-color: #f0f4f8; /* Màu nền khi active/hover */
+            color: #1a73e8; /* Màu chữ khi active/hover */
+        }
+
+        .nav-primary .nav-item a i {
+            width: 20px;
+            margin-right: 15px;
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+        }
+
+    .nav-primary .nav-item.active a i {
+        color: #1a73e8;
+    }
+
+.nav-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+    .nav-section .text-section {
+        font-size: 12px;
+        color: #999;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+/* 5. Khung nội dung chính (Bên phải) */
+.main-panel {
+    position: relative;
+    padding-top: 60px; /* Khoảng cách cho header */
+    margin-left: 250px; /* Khoảng cách cho sidebar */
+    width: calc(100% - 250px); /* Chiều rộng còn lại */
+    min-height: 100vh;
+    background-color: #f4f5f8;
+    display: flex;
+    flex-direction: column; /* Để đẩy footer xuống dưới */
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1; /* Tự động lấp đầy không gian */
+}
+
+/* 6. Footer (Phía dưới) */
+.footer {
+    padding: 15px 20px;
+    border-top: 1px solid #e9e9e9;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+    flex-shrink: 0; /* Không co lại */
+}
+
+    .footer .nav {
+        display: flex;
+    }
+
+    .footer .nav-item .nav-link {
+        color: #777;
+        padding: 0 8px;
+    }
+
+    .footer .nav-item:first-child .nav-link {
+        padding-left: 0;
+    }
+
+    .footer .heart {
+        color: #f3545d; /* Màu đỏ cho trái tim */
+    }

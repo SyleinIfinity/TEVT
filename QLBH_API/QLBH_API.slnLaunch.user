@@ -10,6 +10,10 @@
       {
         "Path": "QLBH_WEB\\QLBH_WEB.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "QLBH_WEB_ADMIN\\QLBH_WEB_ADMIN.csproj",
+        "Action": "Start"
       }
     ]
   }

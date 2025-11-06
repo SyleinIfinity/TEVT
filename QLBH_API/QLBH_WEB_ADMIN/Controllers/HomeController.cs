@@ -1,30 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
+using System.Configuration;
+using System.Net.Http;
 using System.Web.Mvc;
+using QLBH_WEB_ADMIN.Models;
 
 namespace QLBH_WEB_ADMIN.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly string _apiBaseUrl = ConfigurationManager.AppSettings["ApiBaseUrl"];
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        [ChildActionOnly]
+        public ActionResult DanhMucMenu()
         {
-            ViewBag.Message = "Your application description page.";
+            IEnumerable<DanhMucViewModel> danhMucList;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new System.Uri(_apiBaseUrl);
+                var responseTask = client.GetAsync("api/DanhMuc");
+                responseTask.Wait();
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<IEnumerable<DanhMucViewModel>>();
+                    readTask.Wait();
+                    danhMucList = readTask.Result;
+                }
+                else
+                {
+                    danhMucList = new List<DanhMucViewModel>();
+                }
+            }
+            return PartialView("_DanhMucMenu", danhMucList);
         }
     }
 }
