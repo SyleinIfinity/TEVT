@@ -24,7 +24,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-// 4. Các dịch vụ mặc định
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
