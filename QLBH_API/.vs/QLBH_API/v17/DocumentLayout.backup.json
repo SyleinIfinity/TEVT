@@ -3,15 +3,60 @@
   "WorkspaceRootPath": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF806C22-7A08-4AFA-ABE1-A1AD8D70FB48}|QLBH_API\\QLBH_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF806C22-7A08-4AFA-ABE1-A1AD8D70FB48}|QLBH_API\\QLBH_API.csproj|solutionrelative:qlbh_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\views\\home\\_danhmucmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\views\\home\\_danhmucmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF806C22-7A08-4AFA-ABE1-A1AD8D70FB48}|QLBH_API\\QLBH_API.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EF806C22-7A08-4AFA-ABE1-A1AD8D70FB48}|QLBH_API\\QLBH_API.csproj|solutionrelative:qlbh_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TUFadmin\\AppData\\Roaming\\Microsoft\\UserSecrets\\e5c2f8e7-8f19-4167-becb-314b5f97385e\\secrets.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\views\\cart\\_shoppingcartwidget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\views\\cart\\_shoppingcartwidget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\models\\sanphamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\models\\sanphamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\models\\danhmucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\models\\danhmucviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7A11782B-679F-4F3B-B27D-FC9FA934BBEE}|QLBH_WEB\\QLBH_WEB.csproj|solutionrelative:qlbh_web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9901E1A0-8D6A-45C2-AA16-B354033DCA4A}|QLBH_WEB_ADMIN\\QLBH_WEB_ADMIN.csproj|f:\\23115053122114_k23_phanvankhanh\\college_year03\\125\\practise_tlwnc\\tevt\\qlbh_api\\qlbh_web_admin\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9901E1A0-8D6A-45C2-AA16-B354033DCA4A}|QLBH_WEB_ADMIN\\QLBH_WEB_ADMIN.csproj|solutionrelative:qlbh_web_admin\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,43 +66,188 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_API\\Program.cs",
-              "RelativeDocumentMoniker": "QLBH_API\\Program.cs",
-              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_API\\Program.cs",
-              "RelativeToolTip": "QLBH_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Controllers\\CartController.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Controllers\\CartController.cs",
+              "RelativeToolTip": "QLBH_WEB\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAcwHAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T10:17:33.721Z",
+              "WhenOpened": "2025-11-06T16:14:33.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_API\\appsettings.json",
-              "RelativeDocumentMoniker": "QLBH_API\\appsettings.json",
-              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_API\\appsettings.json",
-              "RelativeToolTip": "QLBH_API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-06T10:16:41.223Z",
+              "DocumentIndex": 3,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Controllers\\SanPhamController.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "QLBH_WEB\\Controllers\\SanPhamController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T16:14:08.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "secrets.xml",
-              "DocumentMoniker": "C:\\Users\\TUFadmin\\AppData\\Roaming\\Microsoft\\UserSecrets\\e5c2f8e7-8f19-4167-becb-314b5f97385e\\secrets.xml",
-              "ToolTip": "C:\\Users\\TUFadmin\\AppData\\Roaming\\Microsoft\\UserSecrets\\e5c2f8e7-8f19-4167-becb-314b5f97385e\\secrets.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-11-06T10:16:26.029Z",
+              "Title": "_ShoppingCartWidget.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Cart\\_ShoppingCartWidget.cshtml",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Views\\Cart\\_ShoppingCartWidget.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Cart\\_ShoppingCartWidget.cshtml",
+              "RelativeToolTip": "QLBH_WEB\\Views\\Cart\\_ShoppingCartWidget.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T16:20:20.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "QLBH_WEB\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowCQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T16:13:40.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "QLBH_WEB\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T16:19:52.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_DanhMucMenu.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Home\\_DanhMucMenu.cshtml",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Views\\Home\\_DanhMucMenu.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Home\\_DanhMucMenu.cshtml",
+              "RelativeToolTip": "QLBH_WEB\\Views\\Home\\_DanhMucMenu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T16:22:53.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\SanPham\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Views\\SanPham\\Index.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\SanPham\\Index.cshtml",
+              "RelativeToolTip": "QLBH_WEB\\Views\\SanPham\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T16:24:53.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "QLBH_WEB\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T16:24:50.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Models\\CartItem.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\CartItem.cs",
+              "RelativeToolTip": "QLBH_WEB\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T16:14:49.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SanPhamViewModel.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\SanPhamViewModel.cs",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Models\\SanPhamViewModel.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\SanPhamViewModel.cs",
+              "RelativeToolTip": "QLBH_WEB\\Models\\SanPhamViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T16:13:27.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DanhMucViewModel.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\DanhMucViewModel.cs",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Models\\DanhMucViewModel.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\DanhMucViewModel.cs",
+              "RelativeToolTip": "QLBH_WEB\\Models\\DanhMucViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T16:12:56.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Models\\Cart.cs",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Models\\Cart.cs",
+              "RelativeToolTip": "QLBH_WEB\\Models\\Cart.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T16:15:14.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Web.config",
+              "RelativeDocumentMoniker": "QLBH_WEB\\Web.config",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB\\Web.config",
+              "RelativeToolTip": "QLBH_WEB\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-06T16:12:07.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Web.config",
+              "DocumentMoniker": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB_ADMIN\\Web.config",
+              "RelativeDocumentMoniker": "QLBH_WEB_ADMIN\\Web.config",
+              "ToolTip": "F:\\23115053122114_K23_PhanVanKhanh\\College_Year03\\125\\practise_TLWNC\\TEVT\\QLBH_API\\QLBH_WEB_ADMIN\\Web.config",
+              "RelativeToolTip": "QLBH_WEB_ADMIN\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-06T16:12:01.84Z",
               "EditorCaption": ""
             }
           ]

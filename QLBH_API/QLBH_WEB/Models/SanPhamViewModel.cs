@@ -11,7 +11,7 @@ namespace QLBH_WEB.Models
         public string TENSANPHAM { get; set; }
         public decimal? DONGIA { get; set; }
         public decimal? SOLUONG { get; set; }
-        public string HINHANH { get; set; }
+        public string HINHANH { get; set; } // Sẽ chứa "guid-abc.png"
         public string MOTA { get; set; }
         public int? MADANHMUC { get; set; }
     }

@@ -47,7 +47,6 @@ namespace QLBH_WEB.Models
             }
         }
 
-        // Phương thức xóa sản phẩm khỏi giỏ
         public void RemoveItem(int maSanPham)
         {
             Items.Remove(maSanPham);

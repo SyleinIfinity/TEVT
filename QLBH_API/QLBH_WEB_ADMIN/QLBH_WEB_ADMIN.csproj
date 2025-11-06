@@ -148,6 +148,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DanhMucViewModel.cs" />
+    <Compile Include="Models\ImageUploadResponse.cs" />
     <Compile Include="Models\SanPhamViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

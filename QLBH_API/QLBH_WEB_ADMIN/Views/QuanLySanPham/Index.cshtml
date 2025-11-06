@@ -1,77 +1,60 @@
 ﻿@model IEnumerable<QLBH_WEB_ADMIN.Models.SanPhamViewModel>
-
 @{
-    ViewBag.Title = "Quản lý sản phẩm";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Danh sách sản phẩm";
+    var apiBaseUrl = System.Configuration.ConfigurationManager.AppSettings["ApiBaseUrl"];
 }
 
-@* Gọi đến file CSS riêng *@
-@section Styles {
-    <link href="@Url.Content("~/Content/css/qlSANPHAM.css")" rel="stylesheet" type="text/css" />
+<h2>Danh sách sản phẩm</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.TENSANPHAM)</th>
+        <th>@Html.DisplayNameFor(model => model.DONGIA)</th>
+        <th>@Html.DisplayNameFor(model => model.SOLUONG)</th>
+        <th>@Html.DisplayNameFor(model => model.HINHANH)</th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.TENSANPHAM)</td>
+            <td>@Html.DisplayFor(modelItem => item.DONGIA)</td>
+            <td>@Html.DisplayFor(modelItem => item.SOLUONG)</td>
+            <td>
+                @if (!string.IsNullOrEmpty(item.HINHANH))
+                {
+                    <img src="@(apiBaseUrl)/api/image/get/@item.HINHANH"
+                         width="100"
+                         class="img-thumbnail"
+                         alt="@item.TENSANPHAM" />
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "Edit", new { id = item.MASANPHAM }) |
+                @Html.ActionLink("Chi tiết", "Details", new { id = item.MASANPHAM }) |
+
+                @using (Html.BeginForm("Delete", "QuanLySanPham", new { id = item.MASANPHAM }, FormMethod.Post, new { @style = "display:inline;" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <input type="submit" value="Xóa" class="btn btn-link"
+                           style="padding:0; margin:0; border:none; color:#007bff; text-decoration:underline; cursor:pointer;"
+                           onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?');" />
+                }
+            </td>
+        </tr>
+    }
+</table>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
 }
-
-<div class="product-page-wrapper">
-    <div class="page-header">
-        <h2>Quản lý sản phẩm</h2>
-        @Html.ActionLink("Thêm sản phẩm mới", "Create", null, new { @class = "add-button" })
-    </div>
-
-    <div class="search-container">
-        <input id="searchBox" type="text" class="search-input" placeholder="Tìm kiếm sản phẩm..." onkeyup="filterTable()" />
-    </div>
-
-    <table id="productTable" class="product-table">
-        <thead>
-            <tr>
-                <th>Mã SP</th>
-                <th>Tên sản phẩm</th>
-                <th>Đơn giá</th>
-                <th>Số lượng</th>
-                <th>Hình ảnh</th>
-                <th>Mô tả</th>
-                <th style="width: 150px;">Thao tác</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td class="product-id">@item.MASANPHAM</td>
-                    <td>@item.TENSANPHAM</td>
-                    <td class="product-price">@String.Format("{0:N0} ₫", item.DONGIA)</td>
-                    <td>@String.Format("{0:N0}", item.SOLUONG)</td>
-                    <td>
-                        <img src="@Url.Content("~/Content/images/" + (item.HINHANH ?? "no-image.png"))"
-                             alt="@item.TENSANPHAM"
-                             class="product-image" />
-                    </td>
-                    <td class="product-description">@item.MOTA</td>
-                    <td class="actions">
-                        @Html.ActionLink("Xem", "Details", new { id = item.MASANPHAM }, new { @class = "action-btn btn-details" })
-                        @Html.ActionLink("Sửa", "Edit", new { id = item.MASANPHAM }, new { @class = "action-btn btn-edit" })
-
-                        @using (Html.BeginForm("Delete", "QuanLySanPham", new { id = item.MASANPHAM }, FormMethod.Post, new { onsubmit = "return confirm('Bạn có chắc muốn xóa sản phẩm này không?');", @class = "delete-form" }))
-                        {
-                            @Html.AntiForgeryToken()
-                            <button type="submit" class="action-btn btn-delete">Xóa</button>
-                        }
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
-
-@section Scripts {
-    <script>
-        function filterTable() {
-            let input = document.getElementById("searchBox");
-            let filter = input.value.toLowerCase();
-            let rows = document.querySelectorAll("#productTable tbody tr");
-            rows.forEach(row => {
-                let text = row.innerText.toLowerCase();
-                row.style.display = text.includes(filter) ? "" : "none";
-            });
-        }
-    </script>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
 }

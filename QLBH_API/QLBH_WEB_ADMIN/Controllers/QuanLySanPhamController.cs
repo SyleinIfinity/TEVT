@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Net.Http;
+using System.Net.Http.Headers; // ⬅️ Thêm using này
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Newtonsoft.Json;
 using QLBH_WEB_ADMIN.Models;
 
 namespace QLBH_WEB_ADMIN.Controllers
@@ -13,12 +15,91 @@ namespace QLBH_WEB_ADMIN.Controllers
     public class QuanLySanPhamController : Controller
     {
         private readonly string _apiBaseUrl = ConfigurationManager.AppSettings["ApiBaseUrl"];
+
+        // Model helper để nhận kết quả từ API upload
+        public class ImageUploadResponse
+        {
+            public string FileName { get; set; }
+            public string Url { get; set; }
+        }
+
+        #region Helpers (Hàm trợ giúp)
+
         private HttpClient GetHttpClient()
         {
             var client = new HttpClient();
             client.BaseAddress = new System.Uri(_apiBaseUrl);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             return client;
         }
+
+        /// <summary>
+        /// Tải danh sách danh mục từ API và đưa vào ViewBag
+        /// </summary>
+        private async Task PopulateDanhMucDropDownList(object selectedDanhMuc = null)
+        {
+            IEnumerable<DanhMucViewModel> danhMucs = new List<DanhMucViewModel>();
+            try
+            {
+                using (var client = GetHttpClient())
+                {
+                    HttpResponseMessage response = await client.GetAsync("api/DanhMuc");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        danhMucs = await response.Content.ReadAsAsync<IEnumerable<DanhMucViewModel>>();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Ghi lại log lỗi (nếu cần)
+                ModelState.AddModelError(string.Empty, "Không thể tải danh mục từ API. Lỗi: " + ex.Message);
+            }
+
+            // Gán vào ViewBag, ngay cả khi bị lỗi (sẽ là danh sách rỗng)
+            // Tên ViewBag "MADANHMUC" sẽ được @Html.DropDownListFor sử dụng
+            ViewBag.MADANHMUC = new SelectList(danhMucs, "MADANHMUC", "TENDANHMUC", selectedDanhMuc);
+        }
+
+        /// <summary>
+        /// Gọi API để upload ảnh
+        /// </summary>
+        private async Task<string> UploadImageToApi(HttpPostedFileBase file)
+        {
+            if (file == null || file.ContentLength == 0)
+                return null;
+
+            try
+            {
+                using (var client = new HttpClient()) // Không cần BaseAddress vì dùng URL đầy đủ
+                using (var content = new MultipartFormDataContent())
+                {
+                    var fileContent = new StreamContent(file.InputStream);
+                    fileContent.Headers.ContentType = new MediaTypeHeaderValue(file.ContentType);
+                    content.Add(fileContent, "file", file.FileName);
+
+                    string apiUrl = ConfigurationManager.AppSettings["ImageUploadApiUrl"];
+
+                    var response = await client.PostAsync(apiUrl, content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var jsonString = await response.Content.ReadAsStringAsync();
+                        var result = JsonConvert.DeserializeObject<ImageUploadResponse>(jsonString);
+                        return result.FileName; // Trả về tên file
+                    }
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Ghi log lỗi
+                return null;
+            }
+        }
+
+        #endregion
 
         // GET: Hiển thị danh sách sản phẩm
         public async Task<ActionResult> Index()
@@ -62,101 +143,65 @@ namespace QLBH_WEB_ADMIN.Controllers
         // GET: Hiển thị form tạo mới VỚI DANH SÁCH DANH MỤC
         public async Task<ActionResult> Create()
         {
-            // Gọi API để lấy danh sách danh mục
-            using (var client = GetHttpClient())
-            {
-                HttpResponseMessage response = await client.GetAsync("api/DanhMuc");
-                if (response.IsSuccessStatusCode)
-                {
-                    var danhMucs = await response.Content.ReadAsAsync<IEnumerable<DanhMucViewModel>>();
-                    // Gửi danh sách qua ViewBag để View có thể tạo DropDownList
-                    ViewBag.DanhMucList = new SelectList(danhMucs, "MADANHMUC", "TENDANHMUC");
-                }
-                else
-                {
-                    // Nếu lỗi, vẫn tạo một SelectList rỗng để View không bị crash
-                    ViewBag.DanhMucList = new SelectList(new List<DanhMucViewModel>(), "MADANHMUC", "TENDANHMUC");
-                    ModelState.AddModelError(string.Empty, "Không thể tải danh sách danh mục từ API.");
-                }
-            }
-            return View();
+            // Tải danh mục cho DropDownList
+            await PopulateDanhMucDropDownList();
+            return View(new SanPhamViewModel()); // Trả về model rỗng để tránh lỗi null
         }
 
         // POST: Xử lý tạo mới sản phẩm
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(SanPhamViewModel sanPham, HttpPostedFileBase hinhAnhFile)
+        public async Task<ActionResult> Create(SanPhamViewModel sanPham, HttpPostedFileBase HINHANH_FILE)
         {
-            // Nếu model hợp lệ (không có lỗi validation)
-            if (ModelState.IsValid)
+            // 1. Xử lý upload ảnh
+            if (HINHANH_FILE != null && HINHANH_FILE.ContentLength > 0)
             {
-                // Xử lý lưu file ảnh
-                if (hinhAnhFile != null && hinhAnhFile.ContentLength > 0)
-                {
-                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(hinhAnhFile.FileName);
-                    var path = Path.Combine(Server.MapPath("~/Content/images"), fileName);
-                    hinhAnhFile.SaveAs(path);
-                    sanPham.HINHANH = fileName;
-                }
+                string uploadedFileName = await UploadImageToApi(HINHANH_FILE);
 
-                // Gọi API để tạo mới
-                using (var client = GetHttpClient())
+                if (!string.IsNullOrEmpty(uploadedFileName))
                 {
-                    HttpResponseMessage result = await client.PostAsJsonAsync("api/SanPham", sanPham);
-                    if (result.IsSuccessStatusCode)
-                    {
-                        TempData["SuccessMessage"] = "Đã thêm sản phẩm thành công!";
-                        return RedirectToAction("Index");
-                    }
-                }
-                ModelState.AddModelError(string.Empty, "Lỗi khi tạo sản phẩm qua API.");
-            }
-
-            // --- PHẦN SỬA LỖI QUAN TRỌNG NHẤT NẰM Ở ĐÂY ---
-            // Nếu ModelState không hợp lệ, chúng ta phải tải lại danh sách danh mục
-            // trước khi trả về View để người dùng có thể chọn lại.
-            using (var client = GetHttpClient())
-            {
-                HttpResponseMessage response = await client.GetAsync("api/DanhMuc");
-                if (response.IsSuccessStatusCode)
-                {
-                    var danhMucs = await response.Content.ReadAsAsync<IEnumerable<DanhMucViewModel>>();
-                    // Tạo lại SelectList, giữ lại giá trị danh mục người dùng đã chọn trước đó
-                    ViewBag.DanhMucList = new SelectList(danhMucs, "MADANHMUC", "TENDANHMUC", sanPham.MADANHMUC);
+                    sanPham.HINHANH = uploadedFileName; // Lưu TÊN FILE vào model
                 }
                 else
                 {
-                    ViewBag.DanhMucList = new SelectList(new List<DanhMucViewModel>(), "MADANHMUC", "TENDANHMUC");
+                    ModelState.AddModelError("", "Lỗi upload ảnh lên server.");
+                    sanPham.HINHANH = null;
+                }
+            }
+            else
+            {
+                sanPham.HINHANH = null; // Không có ảnh
+            }
+
+            // 2. Validate model và gọi API
+            if (ModelState.IsValid)
+            {
+                using (var client = GetHttpClient())
+                {
+                    // Gửi 'sanPham' (với HINHANH = "guid.png") đến API
+                    // SỬA: Dùng await, không dùng .Wait()
+                    HttpResponseMessage response = await client.PostAsJsonAsync("api/SanPham", sanPham);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Lỗi khi tạo sản phẩm qua API.");
+                    }
                 }
             }
 
-            // Trả về view với model hiện tại để người dùng sửa lỗi
+            // 3. Nếu thất bại (ModelState invalid hoặc API lỗi), tải lại DropDownList
+            // SỬA: Gọi lại hàm helper, không dùng 'db'
+            await PopulateDanhMucDropDownList(sanPham.MADANHMUC);
             return View(sanPham);
         }
-
-
 
         // GET: Hiển thị form chỉnh sửa
         public async Task<ActionResult> Edit(int id)
         {
-            // Gọi API để lấy danh sách danh mục
-            using (var client = GetHttpClient())
-            {
-                HttpResponseMessage response = await client.GetAsync("api/DanhMuc");
-                if (response.IsSuccessStatusCode)
-                {
-                    var danhMucs = await response.Content.ReadAsAsync<IEnumerable<DanhMucViewModel>>();
-                    // Gửi danh sách qua ViewBag để View có thể tạo DropDownList
-                    ViewBag.DanhMucList = new SelectList(danhMucs, "MADANHMUC", "TENDANHMUC");
-                }
-                else
-                {
-                    // Nếu lỗi, vẫn tạo một SelectList rỗng để View không bị crash
-                    ViewBag.DanhMucList = new SelectList(new List<DanhMucViewModel>(), "MADANHMUC", "TENDANHMUC");
-                    ModelState.AddModelError(string.Empty, "Không thể tải danh sách danh mục từ API.");
-                }
-            }
-
             SanPhamViewModel sanPham;
             using (var client = GetHttpClient())
             {
@@ -170,62 +215,94 @@ namespace QLBH_WEB_ADMIN.Controllers
                     return HttpNotFound();
                 }
             }
+
+            if (sanPham == null)
+            {
+                return HttpNotFound();
+            }
+
+            // Tải danh mục và chọn sẵn giá trị hiện tại
+            await PopulateDanhMucDropDownList(sanPham.MADANHMUC);
             return View(sanPham);
         }
 
-        //PUT: Xử lý chỉnh sửa sản phẩm
+        // POST: QuanLySanPham/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(int id, SanPhamViewModel sanPham, HttpPostedFileBase hinhAnhFile)
+        public async Task<ActionResult> Edit(SanPhamViewModel sanPham, HttpPostedFileBase HINHANH_FILE)
         {
+            // 1. Xử lý upload ảnh (nếu có file mới)
+            if (HINHANH_FILE != null && HINHANH_FILE.ContentLength > 0)
+            {
+                string uploadedFileName = await UploadImageToApi(HINHANH_FILE);
+                if (!string.IsNullOrEmpty(uploadedFileName))
+                {
+                    sanPham.HINHANH = uploadedFileName; // Gán filename mới
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Lỗi upload ảnh mới. Sẽ giữ lại ảnh cũ.");
+                    // Nếu lỗi, `sanPham.HINHANH` từ hidden field sẽ được giữ nguyên
+                }
+            }
+            // Nếu không có file mới, `sanPham.HINHANH` (từ HiddenFor) sẽ được giữ nguyên
+
+            // 2. Validate model và gọi API
             if (ModelState.IsValid)
             {
-                // BƯỚC 1: XỬ LÝ LƯU FILE ẢNH (NẾU CÓ)
-                if (hinhAnhFile != null && hinhAnhFile.ContentLength > 0)
-                {
-                    // Tạo tên file duy nhất để tránh trùng lặp
-                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(hinhAnhFile.FileName);
-
-                    // Lấy đường dẫn vật lý để lưu file vào thư mục Content/images của WEB_APP
-                    var path = Path.Combine(Server.MapPath("~/Content/images"), fileName);
-
-                    // Lưu file
-                    hinhAnhFile.SaveAs(path);
-
-                    // Cập nhật lại tên ảnh mới vào model `sanPham` để chuẩn bị gửi đi
-                    sanPham.HINHANH = fileName;
-                }
-                // Nếu không có file mới, `sanPham.HINHANH` sẽ giữ nguyên giá trị cũ từ HiddenFor trong View.
-
-                // BƯỚC 2: GỬI DỮ LIỆU ĐÃ CẬP NHẬT LÊN API
                 using (var client = GetHttpClient())
                 {
-                    // Gửi đối tượng sanPham (đã có tên ảnh mới nếu có) lên API dưới dạng JSON
-                    HttpResponseMessage result = await client.PutAsJsonAsync($"api/SanPham/{id}", sanPham);
+                    // SỬA: Dùng await, không dùng .Wait()
+                    // SỬA: Dùng MASANPHAM, không dùng MASP
+                    HttpResponseMessage response = await client.PutAsJsonAsync($"api/SanPham/{sanPham.MASANPHAM}", sanPham);
 
-                    if (result.IsSuccessStatusCode)
+                    if (response.IsSuccessStatusCode)
                     {
                         return RedirectToAction("Index");
                     }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Lỗi khi cập nhật sản phẩm qua API.");
+                    }
                 }
-                ModelState.AddModelError(string.Empty, "Lỗi khi cập nhật sản phẩm qua API.");
             }
+
+            // 3. Nếu thất bại, tải lại DropDownList
+            // SỬA: Gọi lại hàm helper, không dùng 'db'
+            await PopulateDanhMucDropDownList(sanPham.MADANHMUC);
             return View(sanPham);
         }
 
-        // POST: Xử lý xóa sản phẩm
-        [HttpPost]
+        // POST: QuanLySanPham/Delete/5
+        [HttpPost] // Chỉ nhận phương thức POST
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<ActionResult> Delete(int id) // Tên action là Delete, nhận id
         {
-            using (var client = GetHttpClient())
+            try
             {
-                HttpResponseMessage result = await client.DeleteAsync($"api/SanPham/{id}");
-                if (!result.IsSuccessStatusCode)
+                using (var client = GetHttpClient())
                 {
-                    // Thêm thông báo lỗi nếu muốn
+                    // Gọi thẳng API Delete
+                    HttpResponseMessage result = await client.DeleteAsync($"api/SanPham/{id}");
+
+                    if (result.IsSuccessStatusCode)
+                    {
+                        // Dùng TempData để gửi thông báo thành công về trang Index
+                        TempData["SuccessMessage"] = "Đã xóa sản phẩm thành công.";
+                    }
+                    else
+                    {
+                        // Dùng TempData để gửi thông báo lỗi về trang Index
+                        TempData["ErrorMessage"] = "Lỗi khi xoá sản phẩm qua API.";
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = "Đã xảy ra lỗi: " + ex.Message;
+            }
+
+            // Quay trở lại trang Index sau khi xóa
             return RedirectToAction("Index");
         }
     }
